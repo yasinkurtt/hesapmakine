@@ -1,0 +1,133 @@
+body{
+
+    background-color: rgb(196, 162, 118);
+}
+
+#baslik{
+
+
+    background-color: antiquewhite;
+    border-radius: 25px 10px;
+    text-align: center;
+    vertical-align: center  ;
+
+    width: 50%;
+    margin: auto;
+}
+
+footer div {
+
+    font-size: small;
+
+    padding-top: 25px;
+    background-color: rgb(159, 143, 121);
+    opacity: 0.4;
+    width: 85%;
+    border-radius: 10px 78px;
+    margin: auto;
+    margin-top: 17%;
+
+}
+
+footer #footeryazi{
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 25px;
+
+}
+
+#butonSayilar{
+
+    background-color: antiquewhite;
+    border-radius: 25px 10px;
+    width: 30%;
+    height: 100%;
+    margin: 10% 0% 0% 5%;
+}
+
+#operatorler{
+
+    background-color: antiquewhite;
+    border-radius: 25px 10px;
+    width: 30%;
+    height: 100%;
+    margin-bottom: 75px;
+    
+}
+
+#btn1 button{
+
+font-size: 30px;
+margin:25px 25px ;
+
+
+text-align: center;
+
+}
+
+
+
+#btn2 button{
+
+    font-size: 30px;
+    margin:25px 25px ;
+    
+    text-align: center;
+
+}
+
+
+#operatorler{
+
+    float: right;
+    margin-top: -150px;
+    width: 5%;
+}
+
+#topla button{
+    font-size: 30px;
+    margin:25px 25px ;
+    
+    
+    text-align: center
+
+}
+
+#cikar button{
+    font-size: 30px;
+    margin:25px 25px ;
+    
+    
+    text-align: center
+
+}
+
+#carp button{
+    font-size: 30px;
+    margin:25px 25px ;
+    
+    
+    text-align: center
+
+}
+
+#bol button{
+    font-size: 30px;
+    margin:25px 25px ;
+    
+    
+    text-align: center
+
+}
+
+#esitle button{
+    font-size: 30px;
+    margin:25px 25px ;
+    
+    
+    text-align: center
+
+}

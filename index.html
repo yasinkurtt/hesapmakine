@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">  
+    
+    
+        <div  id="baslik">     
+        
+        <header>
+        <h2>hesap makinesi oyunu </h2>
+   
+   </header>
+   <p id="ekran">           </p>
+
+</div>
+
+<div class="row">
+
+
+<div id="butonSayilar" class="col-lg-7">
+     
+
+<div id="btn1" class="col-lg-5">
+    <button onclick="yap(1)" type="button" id="sayi1"> 1</button>
+    <button onclick="yap(2)" type="button" id="sayi2"> 2</button>
+    <button onclick="yap(3)" type="button" id="sayi3"> 3</button> 
+    <button onclick="yap(4)" type="button" id="sayi4"> 4</button>   
+    <button onclick="yap(5)" type="button" id="sayi5"> 5</button>
+</div>
+
+<div id="btn2" class="col-lg-4">
+
+    <button onclick="yap(6)" type="button" id="sayi6"> 6</button>
+    <button onclick="yap(7)" type="button" id="sayi7"> 7</button> 
+    <button onclick="yap(8)" type="button" id="sayi8"> 8</button>   
+    <button onclick="yap(9)" type="button" id="sayi9"> 9</button>   
+    <button onclick="yap(0)" type="button" id="sayi0"> 0</button>   
+</div>
+
+
+
+
+
+
+</div> 
+
+<div id="operatorler" class="col-lg-5">
+
+ <div id="topla">
+    <button onclick="topla()" type="button" id="arti"> +</button>
+ </div>
+
+
+ <div id="cikar"> 
+    <button onclick="cikar()" type="button" id="eksi"> -</button>
+ </div>
+
+ <div id="carp">
+    <button id="carpi" type="button" onclick="carpma()"> *</button>
+ </div>
+ <div id="bol">
+    <button id="bol" type="button" onclick="bolme()"> /</button>
+ </div>
+
+ <div id="esitle">
+    <button type="button" onclick="hesapla()" id="esittir"> =</button>
+ </div>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+    </div>
+
+
+
+
+    <footer>
+        <div id="footeryazi">&copy; Tüm Hakları Saklıdır. YOB Software 2022 
+        
+        <p>Bu sitedeki tüm içerikler Digital Millennium Copyright Act ve 5846 Sayılı Fikir ve Sanat Eserlerini Koruma Kanunu'na istinaden koruma altındadır. Buradaki hiçbir içerik (Yazı, Fotoğraf, Video vb.) site KULLANIM ŞARTLARI'nda da belirtildiği üzere izinsiz olarak kopyalanamaz, alıntı yapılamaz, başka yerde yayınlanamaz.</p>
+        
+        </div>
+        
+        
+            </footer>
+
+    </div>
+    <script>
+        var ekran=document.getElementById("ekran")
+        var deger1
+        var deger2
+        var islem
+        function yap(x){
+            ekran.innerHTML+=x
+
+        }
+        function topla(){
+            deger1=Number( ekran.innerHTML)
+            
+            ekran.innerHTML=""
+            islem="arti"
+
+
+        }
+        
+        
+        function carpma(){
+            deger1=Number( ekran.innerHTML)
+            
+            ekran.innerHTML=""
+            islem="carpi"
+
+
+        }
+        function bolme(){
+            deger1=Number( ekran.innerHTML)
+            
+            ekran.innerHTML=""
+            islem="bol"
+
+
+        }
+        function cikar(){
+            deger1=Number( ekran.innerHTML)
+            
+            ekran.innerHTML=""
+            islem="eksi"
+
+
+        }
+      
+        function hesapla(){
+            deger2=Number( ekran.innerHTML)
+            if(islem=="arti"){
+                ekran.innerHTML=deger1+deger2
+            }else if(islem=="eksi"){
+                ekran.innerHTML=deger1-deger2
+            }else if(islem=="carpi"){
+                ekran.innerHTML=deger1*deger2
+            }else if(islem=="bol"){
+                ekran.innerHTML=deger1/deger2
+            }else {
+                alert("hatali islem")
+            }
+            
+
+        }
+    </script>
+</body>
+</html>
